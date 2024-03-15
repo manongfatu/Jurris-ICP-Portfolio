@@ -14,7 +14,7 @@ function Footer() {
           <img className="img-dfinity" src="/icon-instagram.svg" alt="instagram" />
         </a>
       </div>
-      <span className="copyright">Jurris Of Earth | 2024</span>
+      <span className="copyright">Jurris of Earth | 2024</span>
     </footer>
   );
 }

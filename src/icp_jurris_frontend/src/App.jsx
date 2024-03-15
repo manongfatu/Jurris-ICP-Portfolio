@@ -1,3 +1,6 @@
+import Lottie from "lottie-react";
+import astronaut from "../public/astronaut.json";
+
 function App() {
   return (
     <main>
@@ -7,7 +10,7 @@ function App() {
           <h1>Howdy, Earthling!</h1>
           <span>Embark on the Ultimate Adventure: Prepare for a Journey Beyond Earth!</span>
         </div>
-        <iframe className="img-astronaut" src="https://lottie.host/embed/ce53d4ae-9f56-43d4-93e3-1082e25c00c0/vBSMXkktU1.json"></iframe>
+        <Lottie className="img-astronaut" animationData={astronaut} />
       </div>
     </main>
   );

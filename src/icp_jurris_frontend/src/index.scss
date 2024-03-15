@@ -82,3 +82,18 @@ footer {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .img-dfinity {
+    max-width: 160px;
+  }
+  .heading-wrapper {
+    .main-heading h1 {
+      font-size: 50px;
+    }
+    span {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+  }
+}

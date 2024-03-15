@@ -1,5 +1,8 @@
 {
   "icp_jurris_backend": {
     "ic": "d56uw-kyaaa-aaaak-qdcoa-cai"
+  },
+  "icp_jurris_frontend": {
+    "ic": "f7uj5-gaaaa-aaaak-qdcyq-cai"
   }
 }
