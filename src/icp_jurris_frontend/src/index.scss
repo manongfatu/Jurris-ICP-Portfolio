@@ -10,7 +10,9 @@ body {
   margin: 0px;
 }
 main {
-  min-height: calc(100vh - 83px);
+  min-height: calc(100vh - 106px);
+  position: relative;
+  overflow: hidden;
 }
 
 .img-dfinity {
@@ -52,6 +54,47 @@ main {
     width: 100%;
   }
 }
+.planets {
+  .planet1 {
+    width: 40vw;
+    bottom: -115px;
+    right: -100px;
+    animation: floatAnim 10s infinite linear;
+  }
+  .planet2 {
+    right: 50vh;
+    width: 9vh;
+    top: 38vh;
+    animation: floatAnim 8s infinite linear;
+  }
+  .planet3 {
+    top: 10vh;
+    width: 18vw;
+    right: 5vw;
+    animation: floatAnim 11s infinite linear;
+  }
+  .planet4 {
+    bottom: -60px;
+    left: -50px;
+    width: 40vw;
+    animation: floatAnim 15s infinite linear;
+  }
+  img {
+    position: absolute;
+  }
+}
+
+@keyframes floatAnim {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0px, 30px); /* Adjust as needed */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
 footer {
   text-align: center;
@@ -83,10 +126,39 @@ footer {
   }
 }
 
+.main-heading,
+.img-astronaut {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 600px) {
   .img-dfinity {
     max-width: 160px;
   }
+  .planets {
+    .planet4 {
+      bottom: -10px;
+      left: -45px;
+      width: 60vw;
+    }
+    .planet3 {
+      top: 10vh;
+      width: 25vw;
+      right: 5vw;
+    }
+    .planet2 {
+      right: 34vh;
+      width: 15vh;
+      top: 39vh;
+    }
+    .planet1 {
+      width: 35vw;
+      bottom: 258px;
+      right: 0px;
+    }
+  }
+
   .heading-wrapper {
     .main-heading h1 {
       font-size: 50px;
